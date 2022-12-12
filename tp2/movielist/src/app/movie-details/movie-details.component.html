@@ -1,0 +1,24 @@
+<div class="container border">
+  <div class="back-button border-bottom">
+    <a routerLink="" class="btn btn-primary">Back to Home</a>
+  </div>
+  <h1>{{movie.title  }}</h1>
+  <div class="row border-top border-bottom">
+    <div class="col-md-4 border-right">
+      <img src="{{movie.poster}}" alt="Movie Poster" class="border">
+    </div>
+    <div class="col-md-8">
+      <h2>{{movie.title}}</h2>
+      <p>
+        <strong>Plot:</strong>
+        <br>
+        {{movie.plot  || movie.title }}
+      </p>
+      <p>
+        <strong>Writer:</strong>
+        <br>
+        {{movie.writer}}
+      </p>
+    </div>
+  </div>
+</div>

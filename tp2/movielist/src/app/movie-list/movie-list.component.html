@@ -1,0 +1,8 @@
+<h1> Movie List</h1>
+<ul>
+  <li class="list-group list-group-flush"  *ngFor="let movie of list_movies">
+    <p class="list-group-item"><a routerLink="movie-details/{{movie.id}}"> {{ movie.title }}  </a>  </p>
+    <p class="list-group-item">Genre : {{ movie | movieGenre }}</p>
+    <p class = "list-group-item">Release Year: {{ movie.year }} </p>
+  </li>
+</ul>

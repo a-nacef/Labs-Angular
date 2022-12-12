@@ -1,0 +1,26 @@
+
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    border: 1px solid black; /* Adds a border around each list element */
+    color: red; /* Sets the text color of each list element to red */
+    padding: 10px; /* Adds padding around the content of each list element */
+}
+
+
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-group-item:hover {
+  background-color: cyan; /* Changes the highlight color to green */
+  font-weight: bold; /* Makes the active list item bold */
+}
