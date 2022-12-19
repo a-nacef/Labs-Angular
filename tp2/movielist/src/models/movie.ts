@@ -13,6 +13,7 @@ export class Movie  {
   public country: string;
   public awards: string;
   public poster: string;
+  public trailer: string;
 
   constructor(json: any) {
     this.id =       json.Id;
@@ -27,6 +28,7 @@ export class Movie  {
     this.country =  json.Country;
     this.awards =   json.Awards;
     this.poster =   json.Poster
+    this.trailer =  json.Trailer;
   }
 
 }

@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { Movie } from 'src/models/movie';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieGenrePipe } from 'src/models/movie-genre.pipe';
-import { Movie } from 'src/models/movie';
+import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { EditMovieComponent } from './edit-movie/edit-movie.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MovieTrailerComponent } from './movie-trailer/movie-trailer.component';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 
 
@@ -14,14 +17,23 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
   declarations: [
     AppComponent,
     MovieListComponent,
+    MovieDetailsComponent,
+    EditMovieComponent,
     MovieGenrePipe,
-    MovieDetailsComponent
-  ],
+    MovieTrailerComponent,
+   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxYoutubePlayerModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent, MovieListComponent, MovieDetailsComponent]
+  bootstrap: [AppComponent, MovieListComponent, MovieDetailsComponent,  EditMovieComponent, MovieGenrePipe, MovieTrailerComponent]
 })
+
+
+
+
 export class AppModule { }

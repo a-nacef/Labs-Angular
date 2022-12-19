@@ -11,7 +11,9 @@ export const movie_json =  [
     Language:"English",
     Country:"United States",
     Awards:"Won 6 Oscars. 63 wins & 29 nominations total",
-    Poster:"https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"
+    Poster:"https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg",
+    Trailer: "vZ734NWnAHA"
+
 },
 {
     Id:2,
@@ -25,7 +27,8 @@ export const movie_json =  [
     Language:"English",
     Country:"United States",
     Awards:"N/A",
-    Poster:"https://m.media-amazon.com/images/M/MV5BZjE2ZWIwMWEtNGFlMy00ZjYzLWEzOWEtYzQ0MDAwZDRhYzNjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg"
+    Poster:"https://m.media-amazon.com/images/M/MV5BZjE2ZWIwMWEtNGFlMy00ZjYzLWEzOWEtYzQ0MDAwZDRhYzNjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    Trailer:"BcDK7lkzzsU"
 },
 {
     Id:3,
@@ -39,7 +42,9 @@ export const movie_json =  [
     Language:"Tamil",
     Country:"India",
     Awards:"N/A",
-    "Poster":"https://m.media-amazon.com/images/M/MV5BZTViNTY5YTUtYzczOC00ZDA2LTk0NzItMjkzMDcyNjJkMDJhXkEyXkFqcGdeQXVyMTUwMDg3OTQy._V1_SX300.jpg"
+    Poster:"https://m.media-amazon.com/images/M/MV5BZTViNTY5YTUtYzczOC00ZDA2LTk0NzItMjkzMDcyNjJkMDJhXkEyXkFqcGdeQXVyMTUwMDg3OTQy._V1_SX300.jpg",
+    Trailer:"oQMc7Sq36mI"
+
 },
 {   
     Id:4,
@@ -53,7 +58,8 @@ export const movie_json =  [
     Language:"English",
     Country:"United States",
     Awards:"N/A",
-    Poster:"https://m.media-amazon.com/images/M/MV5BY2I4MDIwYWUtOWMxNC00ZTIzLWE3OGYtOWUyMmIwZGE2NjU4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg"
+    Poster:"https://m.media-amazon.com/images/M/MV5BY2I4MDIwYWUtOWMxNC00ZTIzLWE3OGYtOWUyMmIwZGE2NjU4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    Trailer: "3RDaPV_rJ1Y"
 },
 {
     Id:5,
@@ -67,6 +73,7 @@ export const movie_json =  [
     Language:"English",
     Country:"United States",
     Awards:"Won 2 Oscars. 25 wins & 91 nominations total",
-    Poster:"https://m.media-amazon.com/images/M/MV5BM2UwMDVmMDItM2I2Yi00NGZmLTk4ZTUtY2JjNTQ3OGQ5ZjM2XkEyXkFqcGdeQXVyMTA1OTYzOTUx._V1_SX300.jpg"
+    Poster:"https://m.media-amazon.com/images/M/MV5BM2UwMDVmMDItM2I2Yi00NGZmLTk4ZTUtY2JjNTQ3OGQ5ZjM2XkEyXkFqcGdeQXVyMTA1OTYzOTUx._V1_SX300.jpg",
+    Trailer: "zyYgDtY2AMY"
 }
 ]

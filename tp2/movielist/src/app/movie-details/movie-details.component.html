@@ -2,9 +2,11 @@
   <div class="back-button border-bottom">
     <a routerLink="" class="btn btn-primary">Back to Home</a>
   </div>
-  <h1>{{movie.title  }}</h1>
+  <h1>{{ movie.title  }}</h1>
   <div class="row border-top border-bottom">
     <div class="col-md-4 border-right">
+      <a routerLink="/Trailer/{{movie.id}}" class="btn btn-primary">Show Trailer
+      </a>
       <img src="{{movie.poster}}" alt="Movie Poster" class="border">
     </div>
     <div class="col-md-8">

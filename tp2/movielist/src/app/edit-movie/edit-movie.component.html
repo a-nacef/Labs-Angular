@@ -1,0 +1,19 @@
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <button class="btn btn-secondary" [routerLink]="['/']">Back</button>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <h1>{{ movie.title }}</h1>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <img class="img-fluid" [src]="movie.poster" alt="Poster for {{ movie.title }}">
+    </div>
+  </div>
+</div>
+<app-movie-trailer></app-movie-trailer>

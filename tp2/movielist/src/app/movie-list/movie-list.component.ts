@@ -1,10 +1,13 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, Inject } from '@angular/core';
 import { Movie } from 'src/models/movie';
 import { movie_json } from 'src/models/movie-json';
 import { OnInit } from '@angular/core';
 import { MovieGenrePipe } from 'src/models/movie-genre.pipe';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ViewChild } from '@angular/core';
+import { MovieService } from '../services/movie-service.service';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-movie-list',
@@ -13,22 +16,17 @@ import { ViewChild } from '@angular/core';
 })
 export class MovieListComponent implements  OnInit {
 
-    private movies = movie_json;
-    public list_movies = Array<Movie>();    
-
-
-    ngOnInit(): void {
-       for (let mv of this.movies){
-            this.list_movies.push(  new Movie(mv) );
-        }
-  }
-
-
-  constructor(private router: Router) {}
-
+    public list_movies = this.ms.getMovies();
+ 
+    
+  ngOnInit(): void {}
+  // Define a constructor with an injected MovieService and a private router
+  constructor(private router: Router, @Inject(MovieService) private ms: MovieService) { }
+    
   onClick(event: any ) {
+
     let title =  String(event.srcElement.innerHTML).trim();
-    console.log(title)
+    console.log(this.list_movies)
     for (let j of movie_json){
       if (j.Title ==  title )
           this.router.navigate( ['movie-details', j.Id]);
@@ -36,3 +34,6 @@ export class MovieListComponent implements  OnInit {
 }
 
 }
+
+
+
